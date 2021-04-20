@@ -25,7 +25,7 @@ function App() {
           </div>
       ) : data.map((item) => {
         return (
-            <div className="todo">
+            <div className={`${item.completed ? "todo" : "todo2" }`}>
              {item.id}
              <div>
                  {item.title}
